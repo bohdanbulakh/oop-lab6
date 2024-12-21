@@ -1,0 +1,59 @@
+@startuml
+class com.bohdanbulakh.object3.MainActivity {
++  vector
++ BroadcastReceiver receiver
++ void onCreate(Bundle?)
++ void onNewIntent(Intent)
++ void onDestroy()
+- BroadcastReceiver createReceiver(String,(context: Context?, intent: Intent?) -> Unit)
++ void Obj3Content()
++ void DisplayList()
++ Array<Double>? getDoubleArrayFromClipboard()
+}
+
+
+class com.bohdanbulakh.object2.MainActivity {
++  n
++  minX
++  maxX
++  vector
++ BroadcastReceiver receiver
++ void onCreate(Bundle?)
+- BroadcastReceiver createReceiver(String,(context: Context?, intent: Intent?) -> Unit)
++ void onDestroy()
++ void onNewIntent(Intent)
+- Array<Double> generateVector()
+- void copyArrayToClipboard(Context?,Array<Double>?,String)
++ void Obj2Content()
++ void DisplayList(Array<Double>?)
++ void getDataFromIntent(Intent?)
+}
+
+
+class com.bohdanbulakh.lab6.MainActivity {
++ Int? n
++ Double? minX
++ Double? maxX
++  minError
++ BroadcastReceiver receiver
++ void onCreate(Bundle?)
++ void onDestroy()
+- BroadcastReceiver createReceiver(String,(context: Context?, intent: Intent?) -> Unit)
++ void App()
+- void startActivity(String,String,Intent)
++ void DialogTextField(String,String,(newValue: String) -> Unit)
++ void InputDialog(Int?,Double?,Double?,(
+            n: Int?,
+            minX: Double?,
+            maxX: Double?,
+        ) -> Unit,() -> Unit)
++ void Toolbar(() -> Unit)
+}
+
+
+
+
+com.bohdanbulakh.object3.ComponentActivity <|-- com.bohdanbulakh.object3.MainActivity
+com.bohdanbulakh.object2.ComponentActivity <|-- com.bohdanbulakh.object2.MainActivity
+androidx.appcompat.app.AppCompatActivity <|-- com.bohdanbulakh.lab6.MainActivity
+@enduml

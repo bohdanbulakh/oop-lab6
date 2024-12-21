@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab 6</string>
+    <string name="title_object2">Object 2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_object3">Object 3</string>
+    <string name="title_activity_object3">Object3Activity</string>
+</resources>
